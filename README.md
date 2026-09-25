@@ -42,7 +42,7 @@ Apakah COVID-19 (April 2020) menyebabkan perubahan struktural yang signifikan se
 - **Deteksi breakpoint otomatis** (`ruptures`, algoritma PELT) — tanpa diberi tahu tanggal kebijakan, untuk uji independen
 - **Segmented regression / interrupted time series** (`statsmodels` OLS) dengan variabel dummy interaksi, menguji level jump dan slope change di April 2020
 - **Difference-in-differences** — membandingkan pertumbuhan e-money vs ATM/Debit (kelompok kontrol) 12 bulan sebelum/sesudah
-- **Normalisasi terhadap M1** (uang beredar) — memastikan temuan bukan artefak inflasi/ekspansi moneter
+- **Normalisasi terhadap M1** (uang beredar) — memastikan temuan bukan peninggalan inflasi/ekspansi moneter
 - **Regresi tren linier** pada pangsa dana float non-bank + proyeksi
 
 ## Key Findings
@@ -57,10 +57,10 @@ Apakah COVID-19 (April 2020) menyebabkan perubahan struktural yang signifikan se
 - **Korelasi dengan akses kredit UMKM diuji dan terbukti semu (spurious):** korelasi level mentah antara nilai transaksi e-money dan pangsa kredit UMKM terlihat kuat (-0,87), tapi setelah diuji dengan first-difference (mengontrol tren bersama), korelasinya jatuh ke -0,10 — **tidak ada bukti nyata bahwa e-money memengaruhi akses kredit UMKM**. Ini dilaporkan apa adanya sebagai contoh kehati-hatian terhadap korelasi semu pada dua deret waktu yang sama-sama bertren
 
 ## Hipotesis Awal yang Ditolak
-Hipotesis awal project ini adalah kenaikan limit transaksi QRIS (2021-2022) mempercepat pertumbuhan e-money. Data membuktikan **sebaliknya** — ATM/Debit tumbuh lebih cepat dari e-money pada periode itu, kemungkinan karena efek dasar (base effect) pemulihan ekonomi pasca-PPKM. Ditinggalkan demi kejujuran metodologis, didokumentasikan lengkap di bagian Lampiran notebook.
+Hipotesis awal project ini adalah kenaikan limit transaksi QRIS (2021-2022) mempercepat pertumbuhan e-money. Data membuktikan **sebaliknya** — ATM/Debit tumbuh lebih cepat dari e-money pada periode itu, kemungkinan karena efek dasar (base effect) pemulihan ekonomi pasca-PPKM.
 
 ## Limitations
-Data QRIS granular tidak tersedia gratis dari BI — proxy yang dipakai adalah uang elektronik secara keseluruhan. Analisis bersifat kuasi-eksperimental (structural break + diff-in-diff pada data agregat nasional bulanan), bukan eksperimen acak murni — tidak bisa 100% menyingkirkan faktor perancu lain yang bertepatan dengan April 2020.
+Data QRIS granular tidak tersedia gratis dari BI — proxy yang dipakai adalah uang elektronik secara keseluruhan. Analisis bersifat kuasi-eksperimental (structural break + diff-in-diff pada data agregat nasional bulanan), bukan eksperimen acak murni, tidak bisa 100% menyingkirkan faktor perancu lain yang bertepatan dengan April 2020.
 
 ---
 
