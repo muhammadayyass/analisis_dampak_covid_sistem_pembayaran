@@ -28,7 +28,6 @@ Apakah COVID-19 (April 2020) menyebabkan perubahan struktural yang signifikan se
 - **Tabel SPIP:** 5e (Uang Elektronik), 5a (ATM dan ATM+Debet), 5f (Infrastruktur — jumlah merchant), 2 (Media Pembayaran — M1)
 - **Tabel SSKI:** 19 (Indikator Keuangan Inklusif — termasuk breakdown regional), 20 (Indikator UMKM)
 - **Cakupan:** bulanan, Januari 2009 – Juli 2026 (211 observasi)
-- **Temuan struktur data penting:** penomoran sheet berubah antar tahun (Uang Elektronik = sheet `5c` di 2021, menjadi `5e` di 2026); satu file terbaru sudah memuat seluruh riwayat sejak 2009, tidak perlu gabung banyak file bulanan; label tahun tersimpan campur (angka & teks) untuk rentang 2012–2020.
 
 ## Data Preparation — Power Query
 1. `Get Data → From File → From Workbook` → pilih sheet `5e`/`5a` (cari berdasarkan judul di Table of Contents, bukan nomor sheet — lihat catatan di atas)
